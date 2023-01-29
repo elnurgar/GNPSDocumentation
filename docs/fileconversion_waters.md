@@ -60,6 +60,9 @@ There is a known issue on precursor ion m/z values when Waters .Raw data are con
 
 If we will use the FBMN workflow, you can detour this issue by using .Raw files for MZmine processing, without converting them to .mzML files. However, the direct import of Waters .Raw into MZmine is not possible in MZmine ver 2.53 due to a bug; so try it with old releases.
 
+## 4. How to solve the m/z values drift problem
+As described above, the .mzML files present an issue with m/z values. A sample python script can fix this problem, but only with .mzXML files. THe script can be found [there](https://github.com/elnurgar/mzxml-precursor-corrector)
+
 ## Page Contributors
 
 {{ git_page_authors }}
