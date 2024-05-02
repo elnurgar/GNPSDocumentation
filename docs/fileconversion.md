@@ -64,7 +64,8 @@ After installation, from the Start Menu, click the ProteoWizard folder and open 
 
 - Click on Start.  Check your folder for the new .mzML/.mzXML files. Verify that these files open properly in Insilicos or [TOPP View (OpenMS)](http://www.openms.de/).
 
-
+### Precursor drift problem
+For some instruments data, such as Bruker, m/z values of precursor ions in .mzML and .mzXML files can be different from the real value as the value indicated in the mzml or mzxml file is the value of precursor which was retained for the isolation window during the acquisition. The script that can actually fix this problem on .mzXML files can be found [there](https://github.com/elnurgar/mzxml-precursor-corrector). The problem existed before for Waters data, but in the last version of msconvert, it has been resolved. If you have problems with precursor value of waters data, please check the msconvert version.
 
 ### Advanced Online Conversion with Proteowizard (MSConvert)
 
