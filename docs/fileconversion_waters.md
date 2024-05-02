@@ -56,12 +56,9 @@ ProteoWizard msConvert has been updated several times, and the recent version re
 
 [Here](https://www.dropbox.com/s/lqrqrqjwc8ubj3k/GNPS_Vendor_Conversion.zip?dl=1) is an updated version (with Proteowizard Release 3.0.21120) of the double-click converter we provided in our [guideline](https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/). Convert files with 'Double-Click_To-Convert_waters.bat'.
 
-There is a known issue on precursor ion m/z values when Waters .Raw data are converted to .mzML. The precursor ion fields of MS/MS scans will have m/z values of quadrupole isolation windows, instead of accurate mass values. Unfortunately, we do not have any solution for this issue. Thus, if you will use converted .mzML files directly for classical MN, remember that every m/z values are drifted from the original data.
 
 If we will use the FBMN workflow, you can detour this issue by using .Raw files for MZmine processing, without converting them to .mzML files. However, the direct import of Waters .Raw into MZmine is not possible in MZmine ver 2.53 due to a bug; so try it with old releases.
 
-## 4. Precursor m/z values drift problem
-As mentioned before, m/z values of precursor ions in .mzML and .mzXML files can be different from the real value. The script that can actually fix this problem on .mzXML files can be found [there](https://github.com/elnurgar/mzxml-precursor-corrector).
 
 ## Page Contributors
 
